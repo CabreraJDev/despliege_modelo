@@ -5,6 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 
 # Cargar y procesar los datos
+url = 'https://github.com/CabreraJDev/despliege_modelo/blob/main/datos_power_bi.csv'
 df_completo = pd.read_csv('datos_power_bi.csv')
 
 X = df_completo['comentarios_procesado']
